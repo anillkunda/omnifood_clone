@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: var(--base-font-size);
+  overflow-x: hidden;
+
+  /* Does NOT work on Safari */
+  /* scroll-behavior: smooth */
+}
+
+body {
+  font-family: var(--rubik-font-family);
+  color: var(--text-grey-dark);
+  font-weight: 400;
+  line-height: 1;
+
+  /* Only work if there is nothing absolutely position to body */
+  overflow-x: hidden;
+}

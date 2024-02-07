@@ -1,0 +1,30 @@
+:root {
+  --primary-bg-color: rgb(253, 242, 233);
+  --secondary-bg-color: rgb(250, 229, 211);
+  --tertiary-bg-color: rgba(255, 255, 255, 0.97);
+
+  --rubik-font-family: "Rubik", sans-serif;
+  --base-font-size: 62.5%;
+  --bordar-color: rgb(238, 238, 238);
+
+  --tag-primary-color: rgb(81, 207, 102);
+  --tag-secondary-color: rgb(148, 216, 45);
+  --tag-tertiary-color: rgb(255, 212, 59);
+
+  --button-primary-bg: rgb(230, 125, 34);
+  --button-secondary-bg: rgb(207, 113, 31);
+  --button-tertiary-bg: rgb(237, 152, 78);
+  --button-shades-bg: rgb(69, 38, 10);
+  --button-text-color: rgba(255, 255, 255);
+
+  --text-primary-color: rgb(230, 125, 34);
+  --text-secondary-color: rgb(207, 113, 31);
+
+  --text-grey-dark: rgb(51, 51, 51);
+  --text-grey-medium: rgb(85, 85, 85);
+  --text-grey-light: rgb(111, 111, 111);
+
+  --heading-primary-color: rgb(51, 51, 51);
+  --heading-secondary-color: rgb(69, 38, 10);
+  --subheading-color: rgb(207, 113, 31);
+}

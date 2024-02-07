@@ -1,0 +1,83 @@
+.btn {
+  display: inline-block;
+
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--button-text-color);
+  background: var(--button-primary-bg);
+
+  border-radius: 0.9rem;
+
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.try-btn {
+  padding: 1.2rem 2.4rem;
+}
+
+.try-btn:hover {
+  background: var(--button-secondary-bg);
+  transition: all 0.3s;
+}
+
+.btn {
+  padding: 1.6rem 3.2rem;
+}
+
+.btn:hover {
+  background: var(--button-secondary-bg);
+  transition: all 0.3s;
+}
+
+.play-button {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: transparent;
+
+  outline: none;
+  border: none;
+  transition: all 0.3s;
+}
+
+.play-button img {
+  margin-right: 1.2rem;
+  height: 4.8rem;
+  width: 4.8rem;
+
+  object-fit: contain;
+  border-radius: 50%;
+  border: 0.2rem solid var(--button-primary-bg);
+}
+
+.play-button img:hover {
+  border: 0.2rem solid var(--button-secondary-bg);
+}
+
+.cta--btn {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: inherit;
+  background: var(--button-shades-bg);
+  color: var(--primary-bg-color);
+
+  align-self: end;
+  padding: 1.2rem;
+  border-radius: 0.9rem;
+
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  transition: all 0.3s;
+}
+
+.cta--btn:hover {
+  background: var(--button-text-color);
+  color: var(--text-grey-light);
+}

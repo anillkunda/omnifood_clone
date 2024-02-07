@@ -1,0 +1,373 @@
+/* Other CSS file imports */
+@import url(base/base.css);
+@import url(base/variables.css);
+@import url(base/utility.css);
+@import url(base/typography.css);
+@import url(base/animations.css);
+
+@import url(components/buttons.css);
+
+@import url(layout/grid.css);
+@import url(layout/header.css);
+@import url(layout/footer.css);
+
+@import url(sections/hero.css);
+@import url(sections/featured.css);
+@import url(sections/how-work.css);
+@import url(sections/meals.css);
+@import url(sections/testimonials.css);
+@import url(sections/pricing.css);
+@import url(sections/cta.css);
+
+/* --- Below 1344px (Smaller Desktops) ---*/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- Below 1200px (Landscape Tablets) ---*/
+@media (max-width: 75em) {
+  html {
+    /* 10px / 16px = 0.5625 = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .header__menu {
+    gap: 3.2em;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/* ----- Below 944px (Tablets) ----- */
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16 = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  /* Mobile Navigation */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    background-color: var(--tertiary-bg-color);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+
+    /* Hide Navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hidee it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+    z-index: 1;
+  }
+
+  .nav-open .header__nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .header__menu a:link,
+  .header__menu a:visited {
+    font-size: 3rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero__content,
+  .hero__image {
+    text-align: center;
+  }
+
+  .hero-content__buttons {
+    justify-content: center;
+  }
+
+  .hero__review {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .hero-image img {
+    width: 60%;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal__content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    /* 3/5 = 60% + 2/5 = 40% */
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta__box--form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta--btn {
+    margin-top: 1.2rem;
+  }
+}
+
+/* ----- Below 704px (Smaller tablets) ----- */
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading-secondary {
+    margin-bottom: 5.8rem;
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .footer-links,
+  .footer-address {
+    grid-column: span 3;
+  }
+
+  .footer-nav {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+
+/* ----- Below 544px (Smaller tablets) ----- */
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .try-btn {
+    padding: 1.8rem 1.8rem;
+  }
+
+  .btn {
+    padding: 1.8rem 1.6rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-content__buttons {
+    gap: 3rem;
+  }
+
+  .hero-content__buttons .btn {
+    padding: 1.8rem 1rem;
+  }
+
+  .hero__image img {
+    width: 80%;
+  }
+
+  .logos--box img {
+    height: 2.2rem;
+  }
+
+  .section-how-work {
+    padding: 1.2rem 0 5.2rem;
+  }
+
+  .step__img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step__img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step__img-box:nth-child(2) {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .section-cta {
+    padding: 1rem 0 10rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta__box {
+    padding: 3rem;
+  }
+
+  .cta__box--text {
+    display: none;
+  }
+
+  .cta__box--img-box {
+    height: 30rem;
+    grid-row: 1;
+  }
+}
+
+/* ----- Fixing Safari flexbox gap ----- */
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}

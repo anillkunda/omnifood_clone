@@ -1,0 +1,50 @@
+.section-featured {
+  padding: 4.8rem 0;
+}
+
+.featured {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.featured__heading-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--text-grey-light);
+
+  letter-spacing: 0.75px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.featured__logos {
+  width: 100%;
+  height: 8rem;
+
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.logos--box {
+  width: fit-content;
+  display: inline-block;
+
+  padding: 3rem 0;
+
+  animation-name: infinite-scroll;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.logos--box img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+
+  margin: 0 2.8rem;
+  object-fit: cover;
+  object-position: top;
+}
