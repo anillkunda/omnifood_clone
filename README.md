@@ -3,11 +3,10 @@
   ![GitHub repo size](https://img.shields.io/github/repo-size/anillkunda/omnifood-clone)
   ![GitHub stars](https://img.shields.io/github/stars/anillkunda/omnifood-clone)
   ![GitHub forks](https://img.shields.io/github/forks/anillkunda/omnifood-clone?style=social)
-  
   <br />
   <h2 align="center">OmniFood Website</h2>
   <div align="center">
-     Decelop a Omnifood website using HTML and CSS, incorporating seamless and subtle animations for an enhanced user experience.
+     Develop a Omnifood website using HTML and CSS, incorporating seamless and subtle animations for an enhanced user experience.
   </div>
 
   <a href="https://omnifood-anilkunda.netlify.app"><strong>➥ Live Demo</strong></a>
