@@ -15,7 +15,7 @@
 
 ### Demo Screeshots
 
-![OmniFood_website Desktop Demo](./readme-assets/omnifood-img.png "Desktop Demo")
+![OmniFood_website Desktop Demo](./assets/readme/omnifood-img.png "Desktop Demo")
 
 ## 🔥 Some key features of this effort include:
 
@@ -38,9 +38,9 @@ Follow these steps to set up the project locally on your machine.
 
 Make sure you have the following installed on your machine:
 
-- [git](https://git-scm.com/)
-- [node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
+<div align="left">
+    <img src="https://skillicons.dev/icons?i=git,nodejs" /><br>
+</div>
 
 **Cloning the Repository**
 
