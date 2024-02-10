@@ -1,12 +1,12 @@
 <div align="center">
   
-  ![GitHub repo size](https://img.shields.io/github/repo-size/anillkunda/omnifood-clone)
-  ![GitHub stars](https://img.shields.io/github/stars/anillkunda/omnifood-clone)
-  ![GitHub forks](https://img.shields.io/github/forks/anillkunda/omnifood-clone?style=social)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/anillkunda/omnifood_clone)
+  ![GitHub stars](https://img.shields.io/github/stars/anillkunda/omnifood_clone)
+  ![GitHub forks](https://img.shields.io/github/forks/anillkunda/omnifood_clone?style=social)
   <br />
   <h2 align="center">OmniFood Website</h2>
   <div align="center">
-     Develop a Omnifood website using HTML and CSS, incorporating seamless and subtle animations for an enhanced user experience.
+     Develop a Omnifood website using Vite, Vanilla JavaScript, HTML, and CSS. I've utilized the power of flexbox and grid properties to ensure a seamless and visually stunning website.🌐💻
   </div>
 
   <a href="https://omnifood-anilkunda.netlify.app"><strong>➥ Live Demo</strong></a>
@@ -45,11 +45,11 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/anillkunda/omnifood-clone.git
+git clone https://github.com/anillkunda/omnifood_clone.git
 ```
 
 ```bash
-cd omnifood-clone
+cd omnifood_clone
 ```
 
 **Installation**
